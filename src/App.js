@@ -1,21 +1,19 @@
-import { ChakraProvider, extendTheme, Box } from "@chakra-ui/react";
+import theme from "./theme";
+import { ChakraProvider } from "@chakra-ui/react";
 import Main from "./Main.js";
-
-const theme = extendTheme({
-  fontWeights: {
-    normal: 400,
-    bold: 700,
-  },
-  fontSizes: {},
-});
+import { useState, useEffect } from "react";
 
 function App() {
+  const [isReady, setIsReady] = useState(false);
+  useEffect(() => {
+    document.fonts.load("12px Quicksand").then(() => setIsReady(true));
+  }, []);
   return (
-    <Box bg="#f7f7f7">
+    isReady && (
       <ChakraProvider theme={theme}>
-        <Main />
+        <Main />;
       </ChakraProvider>
-    </Box>
+    )
   );
 }
 
