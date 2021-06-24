@@ -8,6 +8,7 @@ function App() {
   useEffect(() => {
     document.fonts.load("12px Quicksand").then(() => setIsReady(true));
   }, []);
+
   return (
     isReady && (
       <ChakraProvider theme={theme}>
