@@ -6,7 +6,6 @@ import Intro from "./Intro";
 import Links from "./Links";
 import Skills from "./Skills";
 import Footer from "./Footer";
-import NotWork from "./NotWork";
 const Main = () => {
   const column = useBreakpointValue({ base: "1", md: "2" });
   const padding = useBreakpointValue({ base: "20px", md: "96px" });
@@ -30,7 +29,6 @@ const Main = () => {
         <Stack spacing="35px" paddingTop={paddingWork} width="48em" margin="20px">
           <Work />
           <Projects />
-          <NotWork />
         </Stack>
       </Center>
       <Footer />
