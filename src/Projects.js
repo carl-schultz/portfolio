@@ -15,13 +15,13 @@ const Projects = () => {
             <Stack>
               <Box>
                 <Image src="/redchair.png" boxSize="26px" display="inline-block" />
-                <Text fontFamily="Domine" color="#5c5c5c" fontSize="16px" display="inline-block" paddingLeft="2px" position="relative" top="5px">
+                <Text fontFamily="Domine" color="#5c5c5c" fontSize="16px" display="inline-block" paddingLeft="0px" position="relative" top="5px">
                   Chairside
                 </Text>
               </Box>
               <Text fontSize="15px" lineHeight="tall">
                 Designed, prototyped, and developed an application to facilitate from the table mobile ordering at restaurants
-                <LinkOverlay isExternal href="https://eat.chairside.app" />
+                <LinkOverlay isExternal href="https://get.chairside.app" />
               </Text>
             </Stack>
             <Spacer padding="8px" />
