@@ -66,7 +66,7 @@ const Work = () => {
         </TabList>
 
         <TabPanels>
-          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft}>
+          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft} paddingBottom="0px">
             <Text color="grey" fontSize="15px">
               March 2021 - Present
             </Text>
@@ -80,7 +80,7 @@ const Work = () => {
               Responsible for Marketing Delivery tools and procceses
             </Text>
           </TabPanel>
-          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft}>
+          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft} paddingBottom="0px">
             <Text color="grey" fontSize="15px">
               May 2019 - January 2020
             </Text>
@@ -112,7 +112,7 @@ const Work = () => {
               prospective hires to share work opportunities and discuss application process
             </Text>
           </TabPanel>
-          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft}>
+          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft} paddingBottom="0px">
             <Text color="grey" fontSize="15px">
               2019
             </Text>
@@ -127,7 +127,7 @@ const Work = () => {
               grading and held weekly office hours for students to come and ask questions
             </Text>
           </TabPanel>
-          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft}>
+          <TabPanel paddingTop={tabPaddingTop} paddingLeft={tabPaddingLeft} paddingBottom="0px">
             <Text color="grey" fontSize="15px">
               2019
             </Text>

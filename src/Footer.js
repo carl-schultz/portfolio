@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Center, Stack, useBreakpointValue, IconButton, HStack, Icon, LinkBox, LinkOverlay } from "@chakra-ui/react";
+import { Box, Text, Center, Stack, useBreakpointValue, HStack, Icon, LinkBox, LinkOverlay } from "@chakra-ui/react";
 import { SiTwitter, SiLinkedin, SiGithub } from "react-icons/si";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
   const footerSpacing = useBreakpointValue({ base: "20px", md: "70px" });
 
   return (
-    <Box width="100%" bg="#507ca1" height="301px" position="absolute">
+    <Box width="full" bg="#507ca1" height="300px" position="absolute">
       <Center h="300px">
         <Stack direction={footerOrientation} w="80%" spacing={footerSpacing} justify="center">
           <Stack align={footerAlign}>
@@ -29,7 +29,7 @@ const Footer = () => {
           </Stack>
           <Center>
             <Stack align={footerAlign}>
-              <Text fontFamily="system-ui" fontWeight="bold" fontSize="14px" color="#f7f7f7">
+              <Text as="a" href="mailto:carlvschultz@gmail.com" fontFamily="system-ui" fontWeight="bold" fontSize="14px" color="#f7f7f7">
                 carlvschultz@gmail.com
               </Text>
             </Stack>
